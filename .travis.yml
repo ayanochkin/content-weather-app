@@ -4,12 +4,6 @@ services:
   - docker
 jdk:
   - oraclejdk8
-  
-script:
-  - ant test
-
-dist: trust
-
 deploy:
   provider: script
   script: bash docker_push
